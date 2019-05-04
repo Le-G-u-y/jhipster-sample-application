@@ -5,6 +5,24 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504131958_added_entity_I18nText.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504131959_added_entity_Drummer.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132000_added_entity_Role.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132001_added_entity_Permission.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132002_added_entity_Plan.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132003_added_entity_ExcerciseConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132004_added_entity_Excercise.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132005_added_entity_FinishedSession.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132006_added_entity_FinishedExcercise.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132007_added_entity_DrummerStatistics.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20190504131959_added_entity_constraints_Drummer.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132000_added_entity_constraints_Role.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132002_added_entity_constraints_Plan.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132003_added_entity_constraints_ExcerciseConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132004_added_entity_constraints_Excercise.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132005_added_entity_constraints_FinishedSession.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132006_added_entity_constraints_FinishedExcercise.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190504132007_added_entity_constraints_DrummerStatistics.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

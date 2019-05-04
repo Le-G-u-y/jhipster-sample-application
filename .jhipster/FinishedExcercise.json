@@ -1,0 +1,64 @@
+{
+    "name": "FinishedExcercise",
+    "fields": [
+        {
+            "fieldName": "actualBpm",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": 1,
+            "fieldValidateRulesMax": 500
+        },
+        {
+            "fieldName": "actualMinutes",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": 1,
+            "fieldValidateRulesMax": 600
+        },
+        {
+            "fieldName": "createDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "modifyDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "excercise",
+            "otherEntityRelationshipName": "finishedExcercise",
+            "relationshipName": "excercise",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "finishedSession",
+            "otherEntityRelationshipName": "finishedExcercise",
+            "relationshipName": "finishedSession",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190504132006",
+    "entityTableName": "finished_excercise",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

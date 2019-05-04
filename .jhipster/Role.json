@@ -1,0 +1,56 @@
+{
+    "name": "Role",
+    "fields": [
+        {
+            "fieldName": "roleName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "modifyDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "permission",
+            "otherEntityRelationshipName": "role",
+            "relationshipName": "permission",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "drummer",
+            "otherEntityRelationshipName": "role",
+            "relationshipName": "drummer"
+        }
+    ],
+    "changelogDate": "20190504132000",
+    "javadoc": "The Role works as a group of permissions that can be applied to a drummer (drummer).",
+    "entityTableName": "role",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

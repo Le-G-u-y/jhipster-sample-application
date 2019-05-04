@@ -1,0 +1,27 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "drummer": {
+      "home": {
+        "title": "Drummers",
+        "createLabel": "Créer un nouveau Drummer",
+        "createOrEditLabel": "Créer ou éditer un Drummer"
+      },
+      "created": "Un nouveau Drummer a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Drummer avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Drummer avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Drummer {{ id }} ?"
+      },
+      "detail": {
+        "title": "Drummer"
+      },
+      "drummerName": "Drummer Name",
+      "description": "Description",
+      "email": "Email",
+      "createDate": "Create Date",
+      "modifyDate": "Modify Date",
+      "role": "Role",
+      "drummerStatistics": "Drummer Statistics"
+    }
+  }
+}

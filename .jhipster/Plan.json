@@ -1,0 +1,88 @@
+{
+    "name": "Plan",
+    "fields": [
+        {
+            "fieldName": "planName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "planFocus",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "minutesPerSession",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "sessionsPerWeek",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "targetDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "createDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "modifyDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "excerciseConfig",
+            "otherEntityRelationshipName": "plan",
+            "relationshipName": "excerciseConfig"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "drummer",
+            "otherEntityRelationshipName": "plan",
+            "relationshipName": "creator",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "drummer",
+            "otherEntityRelationshipName": "plan",
+            "relationshipName": "owner",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "finishedSession",
+            "otherEntityRelationshipName": "plan",
+            "relationshipName": "finishedSession",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190504132002",
+    "javadoc": "Practice Plan that gets",
+    "entityTableName": "plan",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

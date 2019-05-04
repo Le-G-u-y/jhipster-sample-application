@@ -1,0 +1,26 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "finishedExcercise": {
+      "home": {
+        "title": "Finished Excercises",
+        "createLabel": "Create a new Finished Excercise",
+        "createOrEditLabel": "Create or edit a Finished Excercise"
+      },
+      "created": "A new Finished Excercise is created with identifier {{ param }}",
+      "updated": "A Finished Excercise is updated with identifier {{ param }}",
+      "deleted": "A Finished Excercise is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Finished Excercise {{ id }}?"
+      },
+      "detail": {
+        "title": "Finished Excercise"
+      },
+      "actualBpm": "Actual Bpm",
+      "actualMinutes": "Actual Minutes",
+      "createDate": "Create Date",
+      "modifyDate": "Modify Date",
+      "excercise": "Excercise",
+      "finishedSession": "Finished Session"
+    }
+  }
+}

@@ -43,6 +43,23 @@ public class CacheConfiguration {
             createCache(cm, io.github.jhipster.application.domain.User.class.getName());
             createCache(cm, io.github.jhipster.application.domain.Authority.class.getName());
             createCache(cm, io.github.jhipster.application.domain.User.class.getName() + ".authorities");
+            createCache(cm, io.github.jhipster.application.domain.I18nText.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Drummer.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Role.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Role.class.getName() + ".permissions");
+            createCache(cm, io.github.jhipster.application.domain.Role.class.getName() + ".drummers");
+            createCache(cm, io.github.jhipster.application.domain.Permission.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Permission.class.getName() + ".roles");
+            createCache(cm, io.github.jhipster.application.domain.Plan.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Plan.class.getName() + ".excerciseConfigs");
+            createCache(cm, io.github.jhipster.application.domain.ExcerciseConfig.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Excercise.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Excercise.class.getName() + ".excerciseConfigs");
+            createCache(cm, io.github.jhipster.application.domain.Excercise.class.getName() + ".finishedExcercises");
+            createCache(cm, io.github.jhipster.application.domain.FinishedSession.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.FinishedSession.class.getName() + ".finishedExcercises");
+            createCache(cm, io.github.jhipster.application.domain.FinishedExcercise.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.DrummerStatistics.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

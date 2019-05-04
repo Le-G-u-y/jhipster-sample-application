@@ -1,0 +1,25 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "permission": {
+      "home": {
+        "title": "Permissions",
+        "createLabel": "Permission erstellen",
+        "createOrEditLabel": "Permission erstellen oder bearbeiten"
+      },
+      "created": "Permission erstellt mit ID {{ param }}",
+      "updated": "Permission aktualisiert mit ID {{ param }}",
+      "deleted": "Permission gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Permission {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Permission"
+      },
+      "permissionName": "Permission Name",
+      "description": "Description",
+      "createDate": "Create Date",
+      "modifyDate": "Modify Date",
+      "role": "Role"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+    "name": "Excercise",
+    "fields": [
+        {
+            "fieldName": "excerciseName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 200
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 30000
+        },
+        {
+            "fieldName": "defaultMinutes",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "max"
+            ],
+            "fieldValidateRulesMax": 9000
+        },
+        {
+            "fieldName": "defaultTargetBpm",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": 1,
+            "fieldValidateRulesMax": 500
+        },
+        {
+            "fieldName": "skillType",
+            "fieldType": "SkillType",
+            "fieldValues": "SPEED,GROOVE,CREATIVITY,ADAPTABILITY,DYNAMICS,INDEPENDENCE,LIVE_PERFORMANCE,READING_MUSIC"
+        },
+        {
+            "fieldName": "excerciseType",
+            "fieldType": "ExcerciseType",
+            "fieldValues": "RUDIMENT,TECHNIQUE,SONG,PLAYALONG,SIGHT_READING"
+        },
+        {
+            "fieldName": "createDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "modifyDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "drummer",
+            "otherEntityRelationshipName": "excercise",
+            "relationshipName": "creator",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "excerciseConfig",
+            "otherEntityRelationshipName": "excercise",
+            "relationshipName": "excerciseConfig"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "finishedExcercise",
+            "otherEntityRelationshipName": "excercise",
+            "relationshipName": "finishedExcercise"
+        }
+    ],
+    "changelogDate": "20190504132004",
+    "entityTableName": "excercise",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
