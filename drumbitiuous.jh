@@ -1,0 +1,162 @@
+/** Noch zu lösen:
+  * - Entscheidungen Internationalisierung:
+  *   - Pläne/Übungen von Drumbitious sind internationalisiert. 
+  *   - Selbsterstellte Pläne sind nicht internationalisiert
+  *   - 
+  *
+  *   https://phraseapp.com/blog/posts/database-stored-messages-for-i18n-in-spring-boot/ 
+  **/
+
+entity Drummer {
+	drummerName String required,
+    description String,
+    email String required, 
+    createDate Instant required, 
+    modifyDate Instant required,
+}
+relationship ManyToOne {
+   Drummer to Role
+}
+
+/**
+  * The Role works as a group of permissions that can be applied to a drummer (drummer). 
+  */
+entity Role {
+	roleName String required, 
+    description String,  
+    createDate Instant required, 
+    modifyDate Instant required,
+}
+relationship ManyToMany {
+   Role to Permission
+}
+entity Permission {
+	permissionName String required, 
+    description String,  
+    createDate Instant required, 
+    modifyDate Instant required,
+}
+
+/**
+ * Practice Plan that gets 
+ **/
+entity Plan {
+	planName String required,  // i18n
+    planFocus String required,  // i18n
+    description String,  // i18n
+    minutesPerSession Integer, 
+    sessionsPerWeek Integer,
+    targetDate Instant,
+    createDate Instant required, 
+    modifyDate Instant required,
+}
+relationship OneToMany {
+	Plan to ExcerciseConfig
+}
+relationship ManyToOne {
+    Plan{creator} to Drummer
+    Plan{owner} to Drummer
+}
+
+entity ExcerciseConfig {
+    actualBpm Integer min(1) max(500),
+    targetBpm Integer min(1) max(500),
+    minutes Integer min(1) max(500),
+    note String maxlength(30000),   
+    createDate Instant required, 
+    modifyDate Instant required,
+}
+
+relationship ManyToOne {
+	ExcerciseConfig to Excercise
+}
+
+entity Excercise {
+	excerciseName String required maxlength(200),   // i18n
+    description String maxlength(30000),   // i18n
+    defaultMinutes Integer max(9000), 
+    defaultTargetBpm Integer min(1) max(500),
+    createDate Instant required,  
+    modifyDate Instant required,
+}
+relationship ManyToOne{
+    Excercise{creator} to Drummer
+}
+relationship ManyToMany{
+    Excercise to SkillType
+    Excercise to ExcerciseType
+}
+
+entity FinishedSession {
+    plan Plan,
+    minutesTotal Integer min(1) max(600),
+    note String maxlength(30000), 
+    createDate Instant required, 
+    modifyDate Instant required,
+} 
+relationship OneToOne {
+	FinishedSession to Plan
+}
+relationship OneToMany {
+	FinishedSession to FinishedExcercise
+}
+
+// TOOD: In Java von Excercise erben lassen
+entity FinishedExcercise {
+	actualBpm Integer min(1) max(500),
+    actualMinutes Integer min(1) max(600),
+    excercise Excercise required,
+    createDate Instant required, 
+    modifyDate Instant required,
+}
+
+entity DrummerStatistics {
+	selfAssessedLevelSpeed Integer min(0) max(10), 
+    selfAssessedLevelGroove Integer min(0) max(10),
+    selfAssessedLevelCreativity Integer min(0) max(10),
+    selfAssessedLevelAdaptability Integer min(0) max(10),
+    selfAssessedLevelDynamics Integer min(0) max(10),
+    selfAssessedLevelIndependence Integer min(0) max(10),
+    selfAssessedLevelLivePerformance Integer min(0) max(10),
+    selfAssessedLevelReadingMusic Integer min(0) max(10),
+    createDate Instant required, 
+    modifyDate Instant required,
+}
+relationship OneToOne {
+	DrummerStatistics to Drummer
+}
+
+enum SkillType {
+    SPEED, 
+    GROOVE, 
+    CREATIVITY,
+    ADAPTABILITY,
+    DYNAMICS,
+    INDEPENDENCE,
+    LIVE_PERFORMANCE,
+    READING_MUSIC
+}
+enum ExcerciseType {
+    RUDIMENT, 
+    TECHNIQUE, 
+    SONG,
+    PLAYALONG, 
+    SIGHT_READING
+}
+
+entity I18nText {
+	locale String required,
+    textKey String required,
+    textContent String,
+    createDate Instant required, 
+    modifyDate Instant required,
+}
+
+// Use Data Transfert Objects (DTO)
+dto all with mapstruct
+
+// Set service options to all
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
