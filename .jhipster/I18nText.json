@@ -1,0 +1,48 @@
+{
+    "name": "I18nText",
+    "fields": [
+        {
+            "fieldName": "locale",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "textKey",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "textContent",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "modifyDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190504131958",
+    "javadoc": "Noch zu lösen:\n- Entscheidungen Internationalisierung:\n- Pläne/Übungen von Drumbitious sind internationalisiert.\n- Selbsterstellte Pläne sind nicht internationalisiert\n-\n\nhttps:",
+    "entityTableName": "i_18_n_text",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

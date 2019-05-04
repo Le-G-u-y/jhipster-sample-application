@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity FinishedExcercise.
+    -->
+    <changeSet id="20190504132006-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="excercise_id"
+                                 baseTableName="finished_excercise"
+                                 constraintName="fk_finished_excercise_excercise_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="excercise"/>
+
+        <addForeignKeyConstraint baseColumnNames="finished_session_id"
+                                 baseTableName="finished_excercise"
+                                 constraintName="fk_finished_excercise_finished_session_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="finished_session"/>
+
+    </changeSet>
+</databaseChangeLog>

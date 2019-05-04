@@ -1,0 +1,31 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "excercise": {
+      "home": {
+        "title": "Excercises",
+        "createLabel": "Excercise erstellen",
+        "createOrEditLabel": "Excercise erstellen oder bearbeiten"
+      },
+      "created": "Excercise erstellt mit ID {{ param }}",
+      "updated": "Excercise aktualisiert mit ID {{ param }}",
+      "deleted": "Excercise gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Excercise {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Excercise"
+      },
+      "excerciseName": "Excercise Name",
+      "description": "Description",
+      "defaultMinutes": "Default Minutes",
+      "defaultTargetBpm": "Default Target Bpm",
+      "skillType": "Skill Type",
+      "excerciseType": "Excercise Type",
+      "createDate": "Create Date",
+      "modifyDate": "Modify Date",
+      "creator": "Creator",
+      "excerciseConfig": "Excercise Config",
+      "finishedExcercise": "Finished Excercise"
+    }
+  }
+}

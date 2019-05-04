@@ -1,0 +1,25 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "i18nText": {
+      "home": {
+        "title": "I 18 N Texts",
+        "createLabel": "Create a new I 18 N Text",
+        "createOrEditLabel": "Create or edit a I 18 N Text"
+      },
+      "created": "A new I 18 N Text is created with identifier {{ param }}",
+      "updated": "A I 18 N Text is updated with identifier {{ param }}",
+      "deleted": "A I 18 N Text is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete I 18 N Text {{ id }}?"
+      },
+      "detail": {
+        "title": "I 18 N Text"
+      },
+      "locale": "Locale",
+      "textKey": "Text Key",
+      "textContent": "Text Content",
+      "createDate": "Create Date",
+      "modifyDate": "Modify Date"
+    }
+  }
+}

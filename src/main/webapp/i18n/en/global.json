@@ -7,6 +7,16 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "i18NText": "I 18 N Text",
+        "drummer": "Drummer",
+        "role": "Role",
+        "permission": "Permission",
+        "plan": "Plan",
+        "excerciseConfig": "Excercise Config",
+        "excercise": "Excercise",
+        "finishedSession": "Finished Session",
+        "finishedExcercise": "Finished Excercise",
+        "drummerStatistics": "Drummer Statistics",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

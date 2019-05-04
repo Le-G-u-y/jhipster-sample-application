@@ -1,0 +1,28 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "excerciseConfig": {
+      "home": {
+        "title": "Excercise Configs",
+        "createLabel": "Crear nuevo Excercise Config",
+        "createOrEditLabel": "Crear o editar Excercise Config"
+      },
+      "created": "Un nuevo Excercise Config ha sido creado con el identificador {{ param }}",
+      "updated": "Un Excercise Config ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Excercise Config ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Excercise Config {{ id }}?"
+      },
+      "detail": {
+        "title": "Excercise Config"
+      },
+      "actualBpm": "Actual Bpm",
+      "targetBpm": "Target Bpm",
+      "minutes": "Minutes",
+      "note": "Note",
+      "createDate": "Create Date",
+      "modifyDate": "Modify Date",
+      "excercise": "Excercise",
+      "plan": "Plan"
+    }
+  }
+}

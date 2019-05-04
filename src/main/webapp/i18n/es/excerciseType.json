@@ -1,0 +1,12 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "ExcerciseType": {
+      "null": "",
+      "RUDIMENT": "RUDIMENT",
+      "TECHNIQUE": "TECHNIQUE",
+      "SONG": "SONG",
+      "PLAYALONG": "PLAYALONG",
+      "SIGHT_READING": "SIGHT_READING"
+    }
+  }
+}

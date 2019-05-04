@@ -1,0 +1,15 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "SkillType": {
+      "null": "",
+      "SPEED": "SPEED",
+      "GROOVE": "GROOVE",
+      "CREATIVITY": "CREATIVITY",
+      "ADAPTABILITY": "ADAPTABILITY",
+      "DYNAMICS": "DYNAMICS",
+      "INDEPENDENCE": "INDEPENDENCE",
+      "LIVE_PERFORMANCE": "LIVE_PERFORMANCE",
+      "READING_MUSIC": "READING_MUSIC"
+    }
+  }
+}

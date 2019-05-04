@@ -1,0 +1,62 @@
+{
+    "name": "FinishedSession",
+    "fields": [
+        {
+            "fieldName": "minutesTotal",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": 1,
+            "fieldValidateRulesMax": 600
+        },
+        {
+            "fieldName": "note",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 30000
+        },
+        {
+            "fieldName": "createDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "modifyDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "plan",
+            "otherEntityRelationshipName": "finishedSession",
+            "relationshipName": "plan",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "finishedExcercise",
+            "otherEntityRelationshipName": "finishedSession",
+            "relationshipName": "finishedExcercise"
+        }
+    ],
+    "changelogDate": "20190504132005",
+    "entityTableName": "finished_session",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

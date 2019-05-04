@@ -1,0 +1,32 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "plan": {
+      "home": {
+        "title": "Plans",
+        "createLabel": "Crear nuevo Plan",
+        "createOrEditLabel": "Crear o editar Plan"
+      },
+      "created": "Un nuevo Plan ha sido creado con el identificador {{ param }}",
+      "updated": "Un Plan ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Plan ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Plan {{ id }}?"
+      },
+      "detail": {
+        "title": "Plan"
+      },
+      "planName": "Plan Name",
+      "planFocus": "Plan Focus",
+      "description": "Description",
+      "minutesPerSession": "Minutes Per Session",
+      "sessionsPerWeek": "Sessions Per Week",
+      "targetDate": "Target Date",
+      "createDate": "Create Date",
+      "modifyDate": "Modify Date",
+      "excerciseConfig": "Excercise Config",
+      "creator": "Creator",
+      "owner": "Owner",
+      "finishedSession": "Finished Session"
+    }
+  }
+}

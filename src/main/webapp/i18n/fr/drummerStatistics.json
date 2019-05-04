@@ -1,0 +1,31 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "drummerStatistics": {
+      "home": {
+        "title": "DrummerStatistics",
+        "createLabel": "Créer un nouveau Drummer Statistics",
+        "createOrEditLabel": "Créer ou éditer un Drummer Statistics"
+      },
+      "created": "Un nouveau Drummer Statistics a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Drummer Statistics avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Drummer Statistics avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Drummer Statistics {{ id }} ?"
+      },
+      "detail": {
+        "title": "Drummer Statistics"
+      },
+      "selfAssessedLevelSpeed": "Self Assessed Level Speed",
+      "selfAssessedLevelGroove": "Self Assessed Level Groove",
+      "selfAssessedLevelCreativity": "Self Assessed Level Creativity",
+      "selfAssessedLevelAdaptability": "Self Assessed Level Adaptability",
+      "selfAssessedLevelDynamics": "Self Assessed Level Dynamics",
+      "selfAssessedLevelIndependence": "Self Assessed Level Independence",
+      "selfAssessedLevelLivePerformance": "Self Assessed Level Live Performance",
+      "selfAssessedLevelReadingMusic": "Self Assessed Level Reading Music",
+      "createDate": "Create Date",
+      "modifyDate": "Modify Date",
+      "drummer": "Drummer"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "finishedSession": {
+      "home": {
+        "title": "Finished Sessions",
+        "createLabel": "Finished Session erstellen",
+        "createOrEditLabel": "Finished Session erstellen oder bearbeiten"
+      },
+      "created": "Finished Session erstellt mit ID {{ param }}",
+      "updated": "Finished Session aktualisiert mit ID {{ param }}",
+      "deleted": "Finished Session gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Finished Session {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Finished Session"
+      },
+      "minutesTotal": "Minutes Total",
+      "note": "Note",
+      "createDate": "Create Date",
+      "modifyDate": "Modify Date",
+      "plan": "Plan",
+      "finishedExcercise": "Finished Excercise"
+    }
+  }
+}
